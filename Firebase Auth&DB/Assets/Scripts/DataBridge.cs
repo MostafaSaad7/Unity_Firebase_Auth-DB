@@ -35,7 +35,7 @@ public class DataBridge : MonoBehaviour
         data = new Player(userInput.text, passwordInput.text);
         string json = JsonUtility.ToJson(data);
         string userId=FirebaseAuth.DefaultInstance.CurrentUser.UserId;
-        dataBaseRef.Child("Users "+userId).SetRawJsonValueAsync(json);
+        dataBaseRef.Child("Users 43"+userId).SetRawJsonValueAsync(json);
 
 
     }
